@@ -1,13 +1,13 @@
 config = {
-    "domain-admin":         "administrator",
-    "realm":                "NAS.LAB",  # MUST BE ALL CAPS
-    "client-computer-name": "krb-nfs",
-    "client-ip":            "10.63.171.218",
-    "svm":                  "NAS",
-    "dc-ip":                "10.63.171.44",
-    "dc-name":              "dc22",
-    "data-lif":             "lif_NAS_345",
-    "dns-name-of-lif":      "lif_NAS_345",
-    "data-lif-ip":          "10.192.168.60",
-    "dns-ip":               "10.63.171.44",
+    "domain-admin":         "<domain_admin_name>",
+    "realm":                "KERB.REALM",  # MUST BE ALL CAPS
+    "client-computer-name": "<short_hostname>", # Shortname. Not FQDN
+    "client-ip":            "<client_ip>",
+    "svm":                  "<svm_name>",
+    "dc-ip":                "<dc_ip",
+    "dc-name":              "<dc_hostname>", # Shortname. Not FQDN
+    "data-lif":             "<data_lif>",
+    "dns-name-of-lif":      "<dns_name_of_data_lif>",
+    "data-lif-ip":          "<lif_ip>",
+    "dns-ip":               "<dns_ip>",
 }

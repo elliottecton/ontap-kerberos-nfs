@@ -2,7 +2,7 @@ from kerberos_config import config
 # for rocky linux, step 1 is dnf -y install realmd sssd oddjob oddjob-mkhomedir adcli samba-common-tools krb5-workstation
 client_commands = [
     "******* On the client ********",
-    "1. yum install sssd realmd oddjob oddjob-mkhomedir adcli samba-common samba-common-tools krb5-workstation openldap-clients policycoreutils-python nfs-utils -y", #If RHEL9 python3-policycoreutils
+    "1. dnf install sssd realmd oddjob oddjob-mkhomedir adcli samba-common samba-common-tools krb5-workstation openldap-clients policycoreutils-python nfs-utils -y", #If RHEL9 python3-policycoreutils
     "2. Confirm /etc/resolv.conf is pointing to the right domain and DNS server",
     "3. realm join --user=" + config["domain-admin"] + " " + config["realm"],
     "\n******** Go to Powershell on the DC and run the following: ********",
